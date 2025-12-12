@@ -1,0 +1,38 @@
+{
+  "name": "@harperdb/vite-plugin",
+  "version": "1.0.0",
+  "description": "a plugin for vite to run inside of harper",
+  "license": "ISC",
+  "author": "BboyAkers",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@types/node": "^25.0.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.7"
+  },
+  	"repository": {
+		"type": "git",
+		"url": "https://github.com/HarperFast/vite-plugin"
+	},
+  "engines": {
+		"node": ">=22"
+	},
+  "devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": ">=20",
+			"onFail": "error"
+		},
+		"packageManager": {
+			"name": "npm",
+			"onFail": "error"
+		}
+	}
+
+}

@@ -1,0 +1,2 @@
+# Plugin entry point (required by Harper)
+pluginModule: 'dist/index.js'
