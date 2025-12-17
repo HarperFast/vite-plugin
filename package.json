@@ -1,19 +1,27 @@
 {
-  "name": "@harperfast/vite-plugin",
-  "version": "1.0.0",
-  "description": "Plugin for running Vite applications inside Harper",
-  "license": "ISC",
-  "author": "BboyAkers",
-  "type": "module",
-  "main": "src/index.ts",
-  "files": [
+	"name": "@harperfast/vite-plugin",
+	"version": "0.0.0 ",
+	"description": "Plugin for running Vite applications inside Harper",
+	"license": "Apache-2.0",
+	"type": "module",
+	"main": "src/index.ts",
+	"files": [
 		"dist/",
 		"config.yaml",
 		"LICENSE",
 		"README.md"
 	],
-  "scripts": {
-    "build": "tsc",
+	"homepage": "https://github.com/HarperFast/vite-plugin",
+	"bugs": {
+		"url": "https://github.com/HarperFast/vite-plugin/issues",
+		"email": "support@harperdb.io"
+	},
+	"author": {
+		"name": "HarperFast",
+		"email": "support@harperdb.io"
+	},
+	"scripts": {
+		"build": "tsc",
 		"dev": "tsc --watch",
 		"test:coverage": "npm run build && node --test --experimental-test-coverage",
 		"lint": "eslint . --ignore-pattern 'dist/**'",
@@ -21,37 +29,37 @@
 		"format:check": "npm run format -- --check",
 		"format:write": "npm run format -- --write",
 		"prepublishOnly": "npm run build"
-  },
-  "dependencies": {
-    "vite": "^7.2.7"
-  },
-  "exports": {
-    ".": "./dist/index.js",
-    "./config": "./config.yaml"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/HarperFast/vite-plugin"
-  },
-  "engines": {
-    "node": ">=22"
-  },
-  "devEngines": {
-    "runtime": {
-      "name": "node",
-      "version": ">=20",
-      "onFail": "error"
-    },
-    "packageManager": {
-      "name": "npm",
-      "onFail": "error"
-    }
-  },
-  "devDependencies": {
-    "@harperdb/code-guidelines": "^0.0.6",
-    "@types/node": "^25.0.2",
-    "eslint": "^9.39.2",
-    "prettier": "^3.7.4",
-    "typescript": "^5.9.3"
-  }
+	},
+	"dependencies": {
+		"vite": "^7.2.7"
+	},
+	"exports": {
+		".": "./dist/index.js",
+		"./config": "./config.yaml"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/HarperFast/vite-plugin"
+	},
+	"engines": {
+		"node": ">=22"
+	},
+	"devEngines": {
+		"runtime": {
+			"name": "node",
+			"version": ">=20",
+			"onFail": "error"
+		},
+		"packageManager": {
+			"name": "npm",
+			"onFail": "error"
+		}
+	},
+	"devDependencies": {
+		"@harperdb/code-guidelines": "^0.0.6",
+		"@types/node": "^25.0.2",
+		"eslint": "^9.39.2",
+		"prettier": "^3.7.4",
+		"typescript": "^5.9.3"
+	}
 }

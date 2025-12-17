@@ -34,7 +34,7 @@ export interface Scope {
 	server: {
 		http(handler: (request: any, next: (req: any) => any) => Promise<any>, options?: any): void;
 	};
-	
+
 	/** Scope event handlers */
 	on(event: 'close', listener: () => void): void;
 }
@@ -78,7 +78,6 @@ export interface Request extends IncomingMessage {
 	user?: User | string;
 	headers: IncomingMessage['headers'];
 }
-
 
 /**
  * Request Target
