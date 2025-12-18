@@ -1,6 +1,7 @@
 # `@harperfast/vite-plugin`
 
 ## Overview
+
 A lightweight Harper application integration that mounts a Vite dev server in **middleware mode** and forwards HTTP requests to it.
 
 This allows Vite-powered frontends or components to be served directly inside a Harper application during development.
@@ -14,7 +15,6 @@ This plugin:
 
 This is intended for **development workflows**, not production builds.
 
-
 ## How It Works
 
 1. Harper loads your application and calls `handleApplication`
@@ -24,8 +24,8 @@ This is intended for **development workflows**, not production builds.
    - `middlewareMode: true`
 3. Incoming HTTP requests are forwarded to Vite's middleware stack
 
-
 ## Usage
+
 Install the plugin in your Harper application:
 
 ```bash
@@ -39,11 +39,9 @@ Then, in your Harper applications `config.yaml` paste the plugin:
   package: '@harperdb/vite-plugin'
 ```
 
-
 ## Tools Used
+
 1. [TypeScript](https://www.typescriptlang.org/) for static typing
 2. [ESLint](https://eslint.org/) for linting
 3. [Prettier](https://prettier.io/) for code formatting
 4. [Vite](https://vitejs.dev/) for the development server and middleware
-
-
