@@ -35,9 +35,18 @@ npm install @harperfast/vite-plugin --save-dev
 Then, in your Harper applications `config.yaml` paste the plugin:
 
 ```yaml
-'@harperdb/vite-plugin':
-  package: '@harperdb/vite-plugin'
+'@harperfast/vite-plugin':
+  package: '@harperfast/vite-plugin'
 ```
+
+
+Next, open `package.json` and change the "dev" script to:
+
+```
+"dev": "harper run .",
+```
+
+Your application will now run on [http://localhost:9926](http://localhost:9926/).
 
 ## Tools Used
 
